@@ -23,7 +23,7 @@ A lista completa de tecnologias e bibliotecas externas pode ser visualizada nos 
 ## :wrench: Instalação
 
 ### 1) Clone este repositório
- git clone https://github.com/pablolucio97/books-collection.git
+ git clone https://github.com/pablolucio97/ibge_location.git
 
 
 ### 2) Entre na pasta web e execute os comandos:

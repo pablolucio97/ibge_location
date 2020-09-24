@@ -76,7 +76,7 @@ const Index = () => {
     return (
         <div className="main-container">
             <div className="header-bar">
-                <h1>IBGE Find <GiBrazil size={28} color='yellow' style={{backgroundColor: '#6ba32f'}}/></h1>
+                <h1>IBGE Location <GiBrazil size={28} color='yellow' style={{backgroundColor: '#6ba32f'}}/></h1>
             </div>
             <div className="submit-container">
                 <form>

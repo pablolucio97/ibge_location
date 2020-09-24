@@ -3,7 +3,7 @@
 
 ## :bulb: Projeto
 
-IBGE Location é uma aplicação que busca dados da api pública do IBGE no Brasil e inicia uma busca no Google de acordo com os dados informados.
+IBGE Location é uma aplicação que busca dados da [API](https://servicodados.ibge.gov.br/api/v1/localidades/estados) pública do IBGE no Brasil e inicia uma busca no Google de acordo com os dados informados.
 
 
 ## :computer: Web

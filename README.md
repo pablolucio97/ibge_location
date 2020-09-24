@@ -26,17 +26,7 @@ A lista completa de tecnologias e bibliotecas externas pode ser visualizada nos 
 ### 1) Clone este repositório
  git clone https://github.com/pablolucio97/books-collection.git
 
-### 2) Navegue até a pasta api e execute os seguintes comandos:
+
+### 2) Entre na pasta web e execute os comandos:
  npm install
- 
- npm run knex:migrate
- 
- npm start
-
-### 3) Entre na pasta web e execute os comandos:
- npm install
-
-
-### Observações:
-Não esqueça de mudar a baseURL de configuração do axios no arquivo `src/services/api.ts` das pastas web e mobile para seu IP local.
 

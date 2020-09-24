@@ -14,7 +14,6 @@ IBGE Location é uma aplicação que busca dados da api pública do IBGE no Bras
 
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Typescript](https://www.typescriptlang.org/docs/)
-* [Expo](https://docs.expo.io/)
 * [Axios](https://github.com/axios/axios)
 
 

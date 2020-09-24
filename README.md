@@ -7,6 +7,7 @@ IBGE Location é uma aplicação que busca dados da [API](https://servicodados.i
 
 
 ## :computer: Web
+![Acesse a aplicação clicando aqui.](https://5f6cf29790d94b41f12ce5d2--ibge-location.netlify.app/)
  ![image](https://media3.giphy.com/media/JkMkdXV2F2175F5Y3e/giphy.gif)
 
 

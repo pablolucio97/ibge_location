@@ -17,7 +17,7 @@ IBGE Location é uma aplicação que busca dados da [API](https://servicodados.i
 * [Axios](https://github.com/axios/axios)
 
 
-A lista completa de tecnologias e bibliotecas externas pode ser visualizada nos arquivos package.json das pastas api, web e mobile.
+A lista completa de tecnologias e bibliotecas externas pode ser visualizada nos arquivos package.json.
 
 
 ## :wrench: Instalação

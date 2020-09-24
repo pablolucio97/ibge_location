@@ -1,17 +1,13 @@
 
---------------------------------------------------------PT-BR----------------------------------------------------------------------
-
-# Projeto
+# IBGE Location 
 
 ## :bulb: Projeto
 
-Books Collection é uma aplicação que...
+IBGE Location é uma aplicação que busca dados da api pública do IBGE no Brasil e inicia uma busca no Google de acordo com os dados informados.
 
 
 ## :computer: Web
  ![image](https://media3.giphy.com/media/JkMkdXV2F2175F5Y3e/giphy.gif)
-
-## :iphone: Mobile
 
 
 ## :rocket: Tecnologias utilizadas:
@@ -40,10 +36,6 @@ A lista completa de tecnologias e bibliotecas externas pode ser visualizada nos 
 ### 3) Entre na pasta web e execute os comandos:
  npm install
 
-
-### 4) Entre na pasta mobile e execunte os comandos:
- yarn
- expo start
 
 ### Observações:
 Não esqueça de mudar a baseURL de configuração do axios no arquivo `src/services/api.ts` das pastas web e mobile para seu IP local.

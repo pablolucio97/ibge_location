@@ -1,9 +1,14 @@
-import React, {useState, useEffect, ChangeEvent, FormEvent} from 'react'
+import React, {useState, useEffect, ChangeEvent, FormEvent, useContext} from 'react'
 
-import './styles.css'
+import * as Component from './styles'
+
 import {GiBrazil} from 'react-icons/gi'
 import {FcGoogle} from 'react-icons/fc'
 import axios from 'axios'
+
+import {ThemeContext} from 'styled-components'
+
+import Switch from 'react-switch'
 
 interface UFs{
     sigla: string
@@ -13,7 +18,11 @@ interface Cities{
     nome: string
 }
 
-const Index = () => {
+interface Itheme{
+    toggleTheme():void
+}
+
+const Index : React.FC<Itheme> = ({toggleTheme}) => {
 
     const [uf, setUf] = useState<string[]>([])
     const [city, setCities] = useState<string[]>([])
@@ -24,6 +33,8 @@ const Index = () => {
     
     const [loadMSG, setLoadMSG] = useState('')
 
+
+    const {title} = useContext(ThemeContext)
 
     //LOAD UF's
     useEffect(() => {
@@ -74,12 +85,22 @@ const Index = () => {
     }
 
     return (
-        <div className="main-container">
-            <div className="header-bar">
+        <Component.MainContainer className="main-container">
+            <Component.Header className="header-bar">
                 <h1>IBGE Location <GiBrazil size={28} color='yellow' style={{backgroundColor: '#6ba32f'}}/></h1>
-            </div>
-            <div className="submit-container">
-                <form>
+                <p>{title === 'dark' ? '🌞' : '🌙'}</p>
+                <Switch
+                checked={title === 'dark'}
+                onChange={toggleTheme}
+                handleDiameter={15}
+                height={15}
+                width={35}
+                checkedIcon={false}
+                uncheckedIcon={false}
+                />
+            </Component.Header>
+      
+                <Component.SubmitContainer>
                     <h1>Descubra dados do seu município</h1>
                     <h4>Selecione uma UF e uma cidade para pesquisar dados do seu município</h4>
                     <select name="uf" id="uf" onChange={handleSelectedUf}>
@@ -95,12 +116,12 @@ const Index = () => {
                             ))}
                     </select>
                 <button onClick={searchDestiny}><FcGoogle size={16} /></button>
-                </form>
-            </div>
-            <div className="info-container">
+                </Component.SubmitContainer>
+         
+            <Component.InfoContainer className="info-container">
                 <p>{loadMSG}</p>
-            </div>
-        </div>
+            </Component.InfoContainer>
+        </Component.MainContainer>
     )
 }
 

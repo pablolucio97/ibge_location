@@ -19,6 +19,9 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "files" : [
+    "src/themes/themes.d.ts"
+  ],
   "include": [
     "src"
   ]
